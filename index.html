@@ -11,78 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <style>
-        /* Ensure the nav images are properly sized */
-        nav img {
-            height: 40px; /* Adjust the height as needed */
-            margin-right: 20px;
-            max-width: 100px; /* Prevents the image from being too wide */
-        }
-        nav {
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            border-bottom: 2px solid #ddd;
-            box-shadow: 0 4px 2px -2px gray;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s;
-            position: relative;
-        }
-        nav a:hover {
-            color: #007bff;
-        }
-        .content {
-            margin: 20px;
-        }
-        .project-info {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .project-info h2 {
-            margin-top: 0;
-            color: #333;
-        }
-        .project-info .names {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .names div {
-            margin: 10px;
-            text-align: center;
-            background-color: #f4f4f9;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .names div p {
-            margin: 5px 0;
-        }
-        .links a {
-            display: inline-block;
-            margin-right: 20px;
-            text-decoration: none;
-            color: #1a237e;
-            font-weight: bold;
-            background-color: #e8eaf6;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
-        .links a:hover {
-            background-color: #c5cae9;
-        }
-        
-    </style>
 </head>
 <body>
     <nav>
@@ -274,7 +202,7 @@
                         <li data-aos="fade-up" data-aos-delay="300">3. Iteratively prune for \( n \) steps:</li>
                         <li data-aos="fade-up" data-aos-delay="400">&nbsp;&nbsp;a. Apply the mask \( \theta_{\mu} = \mu \odot \theta_0 \).</li>
                         <li data-aos="fade-up" data-aos-delay="500">&nbsp;&nbsp;b. Compute SynFlow objective \( R \):
-                            <script type="math/tex"> R = 1^T \left( \prod_{l=1}^{L} |\theta_{\mu}^{[l]}| \right) 1 </script>
+                            <script type="math/tex"> R = 1^T \left( \prod_{l=1}^{L} |\theta_{\_mu}^{[l]}| \right) 1 </script>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="600">&nbsp;&nbsp;c. Compute SynFlow score \( S \):
                             <script type="math/tex"> S = \frac{\partial R}{\partial \theta_{\mu}} \odot \theta_{\mu} </script>

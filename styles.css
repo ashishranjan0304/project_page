@@ -13,7 +13,7 @@ form {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -104,37 +104,7 @@ button:hover {
     color: #555;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    nav img {
-        margin-bottom: 10px;
-    }
-    .content {
-        margin: 10px;
-    }
-    form {
-        width: 100%;
-    }
-    .project-info {
-        padding: 20px;
-    }
-}
-
-
-
-
-
-<style>
-/* Ensure the nav images are properly sized */
-nav img {
-    height: 40px; /* Adjust the height as needed */
-    margin-right: 20px;
-    max-width: 100px; /* Prevents the image from being too wide */
-}
+/* Navigation styles */
 nav {
     display: flex;
     align-items: center;
@@ -142,6 +112,11 @@ nav {
     background-color: #ffffff;
     border-bottom: 2px solid #ddd;
     box-shadow: 0 4px 2px -2px gray;
+}
+nav img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 20px;
+    max-width: 100px; /* Prevents the image from being too wide */
 }
 nav a {
     margin: 0 20px;
@@ -154,6 +129,8 @@ nav a {
 nav a:hover {
     color: #007bff;
 }
+
+/* Additional styles for content */
 .content {
     margin: 20px;
 }
@@ -199,4 +176,22 @@ nav a:hover {
     background-color: #c5cae9;
 }
 
-</style>
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav img {
+        margin-bottom: 10px;
+    }
+    .content {
+        margin: 10px;
+    }
+    form {
+        width: 100%;
+    }
+    .project-info {
+        padding: 20px;
+    }
+}
