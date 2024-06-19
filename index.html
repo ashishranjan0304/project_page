@@ -295,12 +295,12 @@
                         <li data-aos="fade-up" data-aos-delay="100">1. Initialize the network weights \( w \).</li>
                         <li data-aos="fade-up" data-aos-delay="200">2. Sample a mini-batch of training data \( D_b \).</li>
                         <li data-aos="fade-up" data-aos-delay="300"><b>Compute Magnitude Scores:</b></li>
-                        <li data-aos="fade-up" data-aos-delay="400">&nbsp;&nbsp;a. For each parameter \( p_i \), calculate \( \text{mag\_scores}[i] = |p_i| \).</li>
+                        <li data-aos="fade-up" data-aos-delay="400">&nbsp;&nbsp;a. For each parameter \( p_i \), calculate \( \text{mag_scores}[i] = |p_i| \).</li>
                         <li data-aos="fade-up" data-aos-delay="500"><b>Compute Gradient Scores:</b></li>
                         <li data-aos="fade-up" data-aos-delay="600">&nbsp;&nbsp;a. Perform forward and backward pass on \( D_b \) to compute gradients.</li>
-                        <li data-aos="fade-up" data-aos-delay="700">&nbsp;&nbsp;b. For each parameter \( p_i \) with mask \( m_i \), calculate \( \text{grad\_scores}[i] = \left| \frac{\partial L}{\partial m_i} \right| \).</li>
+                        <li data-aos="fade-up" data-aos-delay="700">&nbsp;&nbsp;b. For each parameter \( p_i \) with mask \( m_i \), calculate \( \text{grad_scores}[i] = \left| \frac{\partial L}{\partial m_i} \right| \).</li>
                         <li data-aos="fade-up" data-aos-delay="800"><b>Combine Scores:</b></li>
-                        <li data-aos="fade-up" data-aos-delay="900">&nbsp;&nbsp;a. For each parameter \( p_i \), calculate \( \text{combined\_scores}[i] = \alpha \times \text{mag\_scores}[i] + \beta \times \text{grad\_scores}[i] \).</li>
+                        <li data-aos="fade-up" data-aos-delay="900">&nbsp;&nbsp;a. For each parameter \( p_i \), calculate \( \text{combined_scores}[i] = \alpha \times \text{mag_scores}[i] + \beta \times \text{grad_scores}[i] \).</li>
                         <li data-aos="fade-up" data-aos-delay="1000">4. Sort combined scores and prune parameters with the lowest scores.</li>
                         <li data-aos="fade-up" data-aos-delay="1100">5. Fine-tune the pruned network.</li>
                     </ul>
